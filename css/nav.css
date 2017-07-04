@@ -1,0 +1,496 @@
+body{
+    font-family: weiruanyahei;
+    color: #8c8c8c;
+}
+
+/*section1 页面头部*/
+.wjs_header{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.wjs_header .row>div{
+    border-right: 1px #cccccc solid;
+}
+
+.wjs_header .row>div:last-child{
+    border: none;
+}
+
+.wjs_header a{
+    margin: 0px 10px;
+}
+.wjs_header .wjs_header_row a{
+    color: #777;
+    text-decoration: none;
+
+}
+.wjs_header .wjs_header_row a:hover,
+.wjs_header .wjs_header_row a:focus {
+    color: dimgrey;
+    text-decoration: none;
+
+}
+/*登录的样式*/
+.wjs_header .wjs_header_row .btn-dl{
+    color: dodgerblue;
+    text-decoration: solid;
+}
+.wjs_header .wjs_header_row .btn-dl:hover,
+.wjs_header .wjs_header_row .btn-dl:focus{
+    color: deepskyblue;
+}
+/*免费注册按钮的样式*/
+.wjs_header button{
+    line-height: 15px;
+    width: 85px;
+    height: 30px;
+}
+
+.wjs_header button:hover{
+    background: red;
+}
+/*二维码*/
+.wjs_header .wjs_1{
+    position: relative;
+}
+.wjs_header .wjs_1 img{
+    display: none;
+    border: 1px solid #ccc;
+}
+
+.wjs_header .wjs_1:hover img{
+    display: block;
+    border-top: none;
+    position: absolute;
+    left: 15%;
+    top: 49px;
+    z-index: 999;
+}
+
+.wjs_header .r_padding{
+    padding-right: 4px;
+}
+
+.wjs_header .btn{
+    color: #ffffff;
+    background: #e92322;
+}
+
+/*section2 导航栏*/
+.wjs_nav {
+    background-color: #f8f8f8;
+    /*height:100px;*/
+    height: auto;
+    z-index: 998;
+}
+.wjs_nav .navbar-brand {
+    color: #777;
+}
+.wjs_nav .navbar-brand:hover,
+.wjs_nav .navbar-brand:focus {
+    color: #777;
+    background-color: transparent;
+}
+
+.wjs_nav .navbar-nav:first-child{
+    padding-left: 35px;
+}
+.wjs_nav .navbar-nav > li > a {
+    color: #777;
+    line-height: 68px;
+    font-size: 16px;
+    padding-left:20px;
+    padding-right:20px;
+    box-sizing: border-box;
+
+}
+.wjs_nav .navbar-nav > li > a:hover,
+.wjs_nav .navbar-nav > li > a:focus {
+    color: #777;
+    background-color: transparent;
+    border-bottom: 2px solid #e92322;
+}
+/*.wjs_nav .navbar-nav > .active > a,
+.wjs_nav .navbar-nav > .active > a:hover,
+.wjs_nav .navbar-nav > .active > a:focus {
+    color: #777;
+    border-bottom: 2px solid #e92322;
+}*/
+.wjs_nav .navbar-nav a,
+.wjs_nav .navbar-nav a:hover,
+.wjs_nav .navbar-nav a:focus {
+    color: #777;
+    background-color: transparent;
+}
+.wjs_nav .navbar-toggle {
+    border-color: #ddd;
+    margin-top: 22px;
+    position: relative;
+    right: 14px;
+
+}
+.wjs_nav .navbar-toggle:hover,
+.wjs_nav .navbar-toggle:focus {
+    background-color: #ddd;
+    margin-top: 22px;
+
+}
+
+.wjs_nav .navbar-toggle .icon-bar {
+    background-color: #888;
+    position: relative;
+    z-index: 3;
+}
+.wjs_nav .navbar-collapse,
+.wjs_nav .navbar-form {
+    border-color: #e7e7e7;
+}
+/*.wjs_nav .navbar-nav > .open > a,
+.wjs_nav .navbar-nav > .open > a:hover,
+.wjs_nav .navbar-nav > .open > a:focus {
+    color: #777;
+    background-color: #e7e7e7;
+}*/
+/*
+@media (max-width: 767px) {
+    .wjs_nav .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .wjs_nav .navbar-nav .open .dropdown-menu > li > a:hover,
+    .wjs_nav .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #777;
+        background-color: transparent;
+    }
+    .wjs_nav .navbar-nav .open .dropdown-menu > .active > a,
+    .wjs_nav .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .wjs_nav .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #777;
+        background-color: #e7e7e7;
+    }
+    .wjs_nav .navbar-nav .open .dropdown-menu > .disabled > a,
+    .wjs_nav .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .wjs_nav .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #777;
+        background-color: transparent;
+
+    }
+}
+*/
+
+
+/*导航栏中屏时候调整高度*/
+.wjs_nav .navbar-nav-md{
+    position: absolute;
+    top: 0px;
+}
+.wjs_nav .navbar-brand img{
+    margin-left: 72px;
+    position: absolute;
+    left: -132px;
+    z-index: -1;
+}
+.wjs_nav .navbar-nav:nth-child(1){
+    margin-left: -30px;
+}
+
+.wjs_nav .btn-link[disabled]:hover,
+fieldset[disabled] .wjs_nav .btn-link:hover,
+.wjs_nav .btn-link[disabled]:focus,
+fieldset[disabled] .wjs_nav .btn-link:focus {
+    color: #777;
+}
+
+.pagination-sm > li > a,
+.pagination-sm > li > span {
+    padding: 5px 10px;
+    color: red;
+    line-height: 1.5;
+}
+
+/*section3 轮播图*/
+/*左右控键的样式*/
+.carousel-l, .carousel-r{
+    padding-top: 12%;
+    font-size: 4em;
+    width: 12%;
+    background-color: rgba(0,0,0,0);
+    opacity: .4;
+}
+
+#myCarousel{
+    position: relative;
+}
+
+#myCarousel .wjs-carousel-sm{
+    width: 100%;
+    height: 390px;
+    background-position: center;
+    background-size: cover;
+
+}
+#myCarousel .wjs-carousel-xs{
+    width: 100%;
+
+}
+
+/*section4 轮播图下面的信息*/
+.wjs_4 a{
+    color: #8c8c8c;
+}
+.wjs_4 a:hover{
+    color: red;
+}
+
+.wjs-row{
+    padding-top: 43px;
+    padding-left: 88px;
+}
+.wjs_4 .wjs-logo{
+    float: left;
+    font-size: 27px;
+    margin: 30px 0px;
+}
+.wjs_4 .wjs-info{
+    float: left;
+    margin: 18px 2px;
+    font-size: 17px;
+}
+
+.wjs_4 .wjs-info span:last-child{
+    font-size: 8px;
+}
+/*section5 宣传预约信息*/
+
+.wjs-info-bottom{
+    border-top: 2px #ccc solid;
+    margin: 30px 0px 50px 0px;
+    padding-top: 40px;
+}
+.wjs-info-bottom a{
+    color: #8c8c8c;
+}
+.wjs-info-bottom a:hover{
+    color: red;
+}
+
+.wjs-info-bottom .wjs-info-bottom-1 div{
+    float: left;
+}
+.wjs-info-bottom .wjs-info-bottom-1-logo{
+    padding-left: 60px;
+    font-size: 1.5em;
+    margin-right: 2px;
+}
+.wjs-info-bottom .wjs-info-bottom-1-logo2{
+    font-size: 1.5em;
+    margin-right: 4px;
+}
+
+/*section6 第二页面的导航和内容*/
+.wjs_section6{
+    background: whitesmoke;
+}
+
+/*导航条*/
+.wjs_section6 .wjs_nav{
+    background: whitesmoke;
+    height: 100px;
+}
+.wjs_nav .nav-btm{
+    margin-left: 6%;
+    margin-top: 4%;
+}
+.wjs_nav .nav-btm>li>a{
+    color: #777;
+    line-height: 60px;
+    font-size: 16px;
+    padding-left:20px;
+    padding-right:20px;
+    box-sizing: border-box;
+    float: left;
+}
+.wjs_nav .nav-btm>li:hover a,
+.wjs_nav .nav-btm>li:focus a{
+    border-bottom: 3px solid red;
+}
+
+/*信息内容*/
+.wjs_section6 .wjs_aside{
+    background: whitesmoke;
+    margin-top: -18px;
+    margin-left: 16px;
+}
+.wjs_section6 .wjs_aside .r{
+    border-top: #EEE9E9 solid 2px;
+    height: 230px;
+}
+
+.wjs_section6 .wjs_aside .r .row-col{
+    margin: 30px 0px 0px 55px;
+    height: 69%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 3px 2px 6px #777;
+}
+
+.wjs_section6 .wjs_aside .r .bgred{
+    background: red !important;
+    color: #ffffff !important;
+}
+.wjs_section6 .wjs_aside .r .row-col:not(.bgred){
+    background: white;
+    color: #30354f;
+}
+
+/**/
+.wjs_aside{
+    background: red;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-bottom: 28px;
+}
+/*左边表格（新手体验1002期）*/
+.wjs_aside .mount-info-left{
+    flex: 3.6;
+    float: left;
+    padding-left: -10px;
+}
+.wjs_aside .mount-info-left table{
+    margin-left: -3px;
+}
+.wjs_aside .mount-info-left table tr{
+    height: 30px;
+}
+.wjs_aside .mount-info-left table tr td:last-child{
+    text-align: right;
+}
+.wjs_aside .mount-info-left .pro{
+    height: 15px;
+    margin-bottom: 5px;
+}
+
+.wjs_aside .mount-info-left .pro .pro-bar{
+    line-height: 15px;
+}
+
+/*右边利率信息*/
+.wjs_aside .mount-info-right{
+    position: relative;
+    /*flex: 1.5;*/
+    width: 110px;
+    height: 100%;
+    float: right;
+    padding: 22px 0;
+    border-left: 2px dotted whitesmoke;
+    text-align: center;
+
+}
+.wjs_aside .mount-info-right p{
+    margin-left: 15%;
+
+}
+.wjs_aside .mount-info-right p span{
+    font-size: 48px;
+}
+.wjs_aside .row-col:not(.bgred) .mount-info-right .p-red{
+    color: red;
+}
+/*信息卡片的小圆孔*/
+.wjs_aside .mount-info-right .smallCricle{
+    position: absolute;
+    left: -7px;
+    top: -6px;
+    width: 13px;
+    height: 13px;
+    background: whitesmoke;
+    border-radius: 50%;
+}
+
+.wjs_aside .mount-info-right .smallCricle:after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 155px;
+    width: 13px;
+    height: 13px;
+    background: whitesmoke;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 1px 3px 6px #777 inset, 0px 8px 3px whitesmoke, 0px 5px 3px whitesmoke;
+}
+
+/*section7 全部新闻*/
+.wjs_allnews{
+    margin: 49px 0px;
+}
+
+.wjs_allnews div{
+    height: 118px;
+    margin-right: 1px;
+}
+.wjs_allnews .allnews-a{
+    text-align: center;
+    padding-top: 68px;
+    border-bottom: 1px #ccc solid;
+}
+.wjs_allnews .allnews-a a{
+    color: #ccc;
+    text-decoration: none;
+}
+
+.wjs_allnews>div a{
+    font-size: 2.2em;
+    vertical-align: bottom;
+}
+
+.wjs_allnews .allnews-logo{
+    margin-top: 40px;
+}
+.wjs_allnews .row-logo{
+    font-size: 4em;
+    text-align: center;
+    color: orangered;
+}
+.wjs_allnews .row-in{
+    margin-right: -23px;
+    text-align: center;
+    font-size: 4em;
+
+}
+/*文字*/
+.wjs_allnews .allnews-info{
+    width: 94%;
+    height: auto;
+    line-height: 42px;
+    text-align: left;
+    padding: 10px 0px 0px 86px;
+}
+
+/*section8 页面尾部logo*/
+.wjs_foot{
+    margin-top: 60px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.wjs_foot p{
+    line-height: 80px;
+    font-size: 27px;
+}
+.wjs_foot ul{
+
+    width: auto;
+    height: 88px;
+    margin: 30px 0;
+}
+.wjs_foot ul li{
+    text-align: center;
+    list-style: none;
+
+    float: left;
+    width: 131px;
+    height: 70px;
+}
+
